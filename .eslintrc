@@ -1,0 +1,51 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "plugins": [
+    "jest",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "airbnb-typescript",
+    "react-app",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+  "settings": {
+    "import/parsers":{
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript":{
+        "alwaysTryTypes":true
+      }
+    }
+  },
+  "rules": {
+    "no-loss-of-precision": "off",
+    "@typescript-eslint/no-loss-of-precision": ["error"],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 100,
+        "useTabs": false,
+        "jsxSingleQuote": true,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "tabWidth": 2
+      }
+    ]
+  },
+  "ignorePatterns":[
+    "config-overrides.js"
+  ]
+}
