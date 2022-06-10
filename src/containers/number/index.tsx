@@ -9,14 +9,10 @@ import * as Styled from './style';
 function Number() {
   const numberId = useIdParam();
 
-  const { isLoading, error, data } = useQuery(
-    `fetchNumber${numberId}`,
-    () => numbers.fetchOne(numberId),
-    {
-      refetchOnWindowFocus: false,
-      retry: false,
-    }
-  );
+  const { isLoading, data } = useQuery(`fetchNumber${numberId}`, () => numbers.fetchOne(numberId), {
+    refetchOnWindowFocus: false,
+    retry: false,
+  });
 
   return (
     <Styled.Container>

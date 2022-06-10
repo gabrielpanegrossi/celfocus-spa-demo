@@ -6,7 +6,7 @@ import { ContainerHeader, Table } from '~components';
 import * as Styled from './style';
 
 function Companies() {
-  const { isLoading, error, data } = useQuery('fetchCompanies', companies.fetchAll, {
+  const { isLoading, data } = useQuery('fetchCompanies', companies.fetchAll, {
     refetchOnWindowFocus: false,
     retry: false,
   });

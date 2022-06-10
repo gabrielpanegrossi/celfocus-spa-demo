@@ -11,23 +11,23 @@ function Company() {
   const [numberArray, setNumberArray] = useState([]);
   const companyId = useIdParam();
 
-  const {
-    isLoading: isLoadingCompany,
-    error: ErrorCompany,
-    data: DataCompany,
-  } = useQuery(`fetchCompany${companyId}`, () => companies.fetchOne(companyId), {
-    refetchOnWindowFocus: false,
-    retry: false,
-  });
+  const { isLoading: isLoadingCompany, data: DataCompany } = useQuery(
+    `fetchCompany${companyId}`,
+    () => companies.fetchOne(companyId),
+    {
+      refetchOnWindowFocus: false,
+      retry: false,
+    }
+  );
 
-  const {
-    isLoading: isLoadingNumbers,
-    error: ErrorNumbers,
-    data: DataNumbers,
-  } = useQuery('fetchNumbers', numbers.fetchAll, {
-    refetchOnWindowFocus: false,
-    retry: false,
-  });
+  const { isLoading: isLoadingNumbers, data: DataNumbers } = useQuery(
+    'fetchNumbers',
+    numbers.fetchAll,
+    {
+      refetchOnWindowFocus: false,
+      retry: false,
+    }
+  );
 
   useEffect(() => {
     if (DataNumbers && DataCompany)
