@@ -40,6 +40,16 @@ First start the API Server then start the react server
   npm run start
 ```
 
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
 ## Demo
 
 Here you can see the index screen.
+
+![Celfocus - Spa Demo](https://user-images.githubusercontent.com/17420066/172985885-431c8b91-1ab9-4521-b0f3-5f7d32f7e522.PNG)
