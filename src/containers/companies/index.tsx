@@ -6,6 +6,8 @@ import { ContainerHeader, Table } from '~components';
 import * as Styled from './style';
 
 function Companies() {
+  const titleArray = ['Company name', 'vatin'];
+
   const { isLoading, data } = useQuery('fetchCompanies', companies.fetchAll, {
     refetchOnWindowFocus: false,
     retry: false,
@@ -15,7 +17,7 @@ function Companies() {
     <Styled.Container>
       <ContainerHeader title='Companies' />
       <Styled.Content>
-        <Table titles={['Company name', 'vatin']} isLoading={isLoading}>
+        <Table titles={titleArray} isLoading={isLoading}>
           {data?.map((company) => (
             <tr key={company.vatin}>
               <td>

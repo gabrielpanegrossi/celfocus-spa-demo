@@ -8,8 +8,9 @@ import { FormatNumberId } from '~utils';
 import * as Styled from './style';
 
 function Company() {
-  const [numberArray, setNumberArray] = useState([]);
+  const titleArray = ['Number', 'Type'];
   const companyId = useIdParam();
+  const [numberArray, setNumberArray] = useState([]);
 
   const { isLoading: isLoadingCompany, data: DataCompany } = useQuery(
     `fetchCompany${companyId}`,
@@ -38,7 +39,7 @@ function Company() {
     <Styled.Container>
       <ContainerHeader title={DataCompany?.name} needsBackButton />
       <Styled.Content>
-        <Table titles={['Number', 'Type']} isLoading={isLoadingCompany || isLoadingNumbers}>
+        <Table titles={titleArray} isLoading={isLoadingCompany || isLoadingNumbers}>
           {numberArray?.map((number) => (
             <tr key={number.id}>
               <td>
