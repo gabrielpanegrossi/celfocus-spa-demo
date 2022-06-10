@@ -11,7 +11,9 @@
       "~hooks": ["hooks"],
       "~hooks/*": ["hooks/*"],
       "~utils": ["utils"],
-      "~utils/*": ["utils/*"]
+      "~utils/*": ["utils/*"],
+      "~routes": ["routes"],
+      "~routes/*": ["routes/*"]
     }
   }
 }

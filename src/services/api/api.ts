@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import { handleSuccess, handleError } from './interceptors';
 
 const getConfig = () => {
   return {
@@ -16,6 +17,8 @@ const api = (baseURL: string, config?: AxiosRequestConfig) => {
 
     return instance(path, mergedConfig).then((response: AxiosResponse<Data>) => response.data);
   };
+
+  instance.interceptors.response.use(handleSuccess, handleError);
 
   return instance;
 };

@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-gKXOVf hydNEF"
+        class="sc-gKXOVf bGBQSC"
       >
         <header
           class="sc-bczRLJ bXXmoA"
@@ -25,7 +25,9 @@ Object {
           >
             <h1
               class="sc-hKMtZM cfLWee"
-            />
+            >
+              Oops
+            </h1>
           </div>
           <div
             class="sc-gsnTZi jGtclP"
@@ -34,36 +36,18 @@ Object {
         <div
           class="sc-iBkjds fzLwdz"
         >
-          <table
-            class="sc-eCYdqJ vSbeb"
+          <p
+            aria-label="error-message"
+            class="sc-ftvSup bhvCTh"
           >
-            <thead>
-              <tr>
-                <th>
-                  Number
-                </th>
-                <th>
-                  Type
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  351 910000000
-                </td>
-                <td>
-                  mobile
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            Seems that we have a problem communicating to the api server, please make sure you've set the correct url on the env file and try again.
+          </p>
         </div>
       </div>
     </div>
     <div>
       <div
-        class="sc-gKXOVf hydNEF"
+        class="sc-gKXOVf bGBQSC"
       >
         <header
           class="sc-bczRLJ bXXmoA"
@@ -82,7 +66,9 @@ Object {
           >
             <h1
               class="sc-hKMtZM cfLWee"
-            />
+            >
+              Oops
+            </h1>
           </div>
           <div
             class="sc-gsnTZi jGtclP"
@@ -91,37 +77,19 @@ Object {
         <div
           class="sc-iBkjds fzLwdz"
         >
-          <table
-            class="sc-eCYdqJ vSbeb"
+          <p
+            aria-label="error-message"
+            class="sc-ftvSup bhvCTh"
           >
-            <thead>
-              <tr>
-                <th>
-                  Number
-                </th>
-                <th>
-                  Type
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  351 910000000
-                </td>
-                <td>
-                  mobile
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            Seems that we have a problem communicating to the api server, please make sure you've set the correct url on the env file and try again.
+          </p>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-gKXOVf hydNEF"
+      class="sc-gKXOVf bGBQSC"
     >
       <header
         class="sc-bczRLJ bXXmoA"
@@ -140,7 +108,9 @@ Object {
         >
           <h1
             class="sc-hKMtZM cfLWee"
-          />
+          >
+            Oops
+          </h1>
         </div>
         <div
           class="sc-gsnTZi jGtclP"
@@ -149,30 +119,12 @@ Object {
       <div
         class="sc-iBkjds fzLwdz"
       >
-        <table
-          class="sc-eCYdqJ vSbeb"
+        <p
+          aria-label="error-message"
+          class="sc-ftvSup bhvCTh"
         >
-          <thead>
-            <tr>
-              <th>
-                Number
-              </th>
-              <th>
-                Type
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                351 910000000
-              </td>
-              <td>
-                mobile
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          Seems that we have a problem communicating to the api server, please make sure you've set the correct url on the env file and try again.
+        </p>
       </div>
     </div>
   </div>,
