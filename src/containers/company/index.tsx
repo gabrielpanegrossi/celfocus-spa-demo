@@ -12,7 +12,7 @@ function Company() {
   const companyId = useIdParam();
   const [numberArray, setNumberArray] = useState([]);
 
-  const { isLoading: isLoadingCompany, data: DataCompany } = useQuery(
+  const { isLoading: isLoadingCompany, data: dataCompany } = useQuery(
     `fetchCompany${companyId}`,
     () => companies.fetchOne(companyId),
     {
@@ -21,7 +21,7 @@ function Company() {
     }
   );
 
-  const { isLoading: isLoadingNumbers, data: DataNumbers } = useQuery(
+  const { isLoading: isLoadingNumbers, data: dataNumbers } = useQuery(
     'fetchNumbers',
     numbers.fetchAll,
     {
@@ -31,13 +31,13 @@ function Company() {
   );
 
   useEffect(() => {
-    if (DataNumbers && DataCompany)
-      setNumberArray(DataNumbers?.filter((item) => item.company_id === DataCompany?.id));
-  }, [DataNumbers, DataCompany]);
+    if (dataNumbers && dataCompany)
+      setNumberArray(dataNumbers?.filter((item) => item.company_id === dataCompany?.id));
+  }, [dataNumbers, dataCompany]);
 
   return (
     <Styled.Container>
-      <ContainerHeader title={DataCompany?.name} needsBackButton />
+      <ContainerHeader title={dataCompany?.name} needsBackButton />
       <Styled.Content>
         <Table titles={titleArray} isLoading={isLoadingCompany || isLoadingNumbers}>
           {numberArray?.map((number) => (

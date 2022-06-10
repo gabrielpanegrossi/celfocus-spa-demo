@@ -7,6 +7,7 @@ import { FormatNumberId } from '~utils';
 import * as Styled from './style';
 
 function Number() {
+  const titleArray = ['Number', 'Type'];
   const numberId = useIdParam();
 
   const { isLoading, data } = useQuery(`fetchNumber${numberId}`, () => numbers.fetchOne(numberId), {
@@ -18,7 +19,7 @@ function Number() {
     <Styled.Container>
       <ContainerHeader needsBackButton />
       <Styled.Content>
-        <Table titles={['Number', 'Type']} isLoading={isLoading}>
+        <Table titles={titleArray} isLoading={isLoading}>
           <tr>
             <td>{data?.id && FormatNumberId(data?.id)}</td>
             <td>{data?.type}</td>
