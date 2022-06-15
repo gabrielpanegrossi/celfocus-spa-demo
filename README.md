@@ -2,9 +2,9 @@
 
 This project was built for a coding challenge proposed by Celfocus.
 
-In this project we'll be consuming an local Api to populate three pages, one showing all the company's that our api has, other showing the numbers of one selected company and the third one showing the information of this number.
+In this project we'll be consuming an local Api to populate three pages, one showing all the company's that our api has, other showing the numbers of one selected company and the third one showing information of this number.
 
-I have used a basic component structure just to show the data on the best way possible trying to avoid repeating code and not focusing that much on stilying with a cool layout once my objective was to show my knowledge on React and its best practices.
+I have used a basic component structure just to show the data on the best way possible trying to avoid repeating code and not focusing that much on stilying with a cool layout once my objective is to show my knowledge about React and its best practices.
 
 ## Environment Variables
 
@@ -25,7 +25,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd Celfocus-Spa-Demo
+  cd celfocus-spa-demo
 ```
 
 Install dependencies
